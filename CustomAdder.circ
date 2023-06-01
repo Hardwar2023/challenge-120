@@ -18,6 +18,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
+  <lib desc="file#..\..\fullAdder.circ" name="12"/>
+  <lib desc="file#..\..\8BITfulladder.circ" name="13"/>
   <main name="CustomAdder"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -56,7 +58,7 @@
     <a name="circuit" val="CustomAdder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(350,250)" name="Pin">
+    <comp lib="0" loc="(330,250)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="FirstOperand"/>
       <a name="width" val="8"/>
@@ -66,19 +68,6 @@
       <a name="label" val="SecondOperand"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(400,250)" name="Tunnel">
-      <a name="label" val="A"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(400,350)" name="Tunnel">
-      <a name="label" val="B"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(630,250)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="C"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(750,250)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -86,23 +75,30 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="3" loc="(520,280)" name="Adder"/>
     <wire from="(130,220)" to="(130,280)"/>
     <wire from="(130,220)" to="(390,220)"/>
     <wire from="(130,280)" to="(390,280)"/>
     <wire from="(130,320)" to="(130,380)"/>
     <wire from="(130,320)" to="(390,320)"/>
     <wire from="(130,380)" to="(390,380)"/>
-    <wire from="(350,250)" to="(400,250)"/>
-    <wire from="(350,350)" to="(400,350)"/>
+    <wire from="(330,250)" to="(440,250)"/>
+    <wire from="(350,350)" to="(460,350)"/>
     <wire from="(390,220)" to="(390,240)"/>
     <wire from="(390,260)" to="(390,280)"/>
     <wire from="(390,320)" to="(390,340)"/>
     <wire from="(390,360)" to="(390,380)"/>
-    <wire from="(630,250)" to="(750,250)"/>
+    <wire from="(440,250)" to="(440,270)"/>
+    <wire from="(440,270)" to="(480,270)"/>
+    <wire from="(460,290)" to="(460,350)"/>
+    <wire from="(460,290)" to="(480,290)"/>
+    <wire from="(520,280)" to="(570,280)"/>
+    <wire from="(570,250)" to="(570,280)"/>
+    <wire from="(570,250)" to="(750,250)"/>
     <wire from="(640,210)" to="(640,240)"/>
     <wire from="(640,210)" to="(890,210)"/>
-    <wire from="(640,260)" to="(640,290)"/>
-    <wire from="(640,290)" to="(890,290)"/>
-    <wire from="(890,210)" to="(890,290)"/>
+    <wire from="(640,260)" to="(640,280)"/>
+    <wire from="(640,280)" to="(890,280)"/>
+    <wire from="(890,210)" to="(890,280)"/>
   </circuit>
 </project>
